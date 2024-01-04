@@ -1,35 +1,7 @@
 File: VaadinCKEditor/README.txt
-Last updated: 27 February 2019
+Last updated: 3 January 2024
 
 3/26/2015 - Migrated from Google Code (https://code.google.com/p/vaadin-ckeditor/) to GitHub (https://github.com/OpenESignForms/vaadin-ckeditor).
-
-
-  USING CKEDITOR FOR VAADIN IN YOUR APPLICATION
-  =============================================
-
-Put the pre-built JAR file and in your Vaadin application's WEB-INF/lib. 
-This has everything you need to use it, including a version of CKEditor.
-You will need to "Compile Vaadin widgets," which is an icon in the Eclipse menubar.
-Then look at the example application for the basic setup.
-
-NOTE: This widget is compiled using JDK 1.6 / Java 6.  We have been using 1.6
-for years now (it was released December 2006) and see no reason to use such 
-an outdated JDK 1.5 per Vaadin's widget specs. 
-
-The CKEditor code, in full as downloaded from http://ckeditor.com, is present in the 
-src/org/vaadin/openesignforms/ckeditor/public folder.  No changes to CKEditor were made.
-However, we remove the following files from the standard CKEditor distribution as they are not needed:
-   ckeditor/samples
-We also install our vaadinsave plugin in addition to the CKEditor plugins shipped in the full package release.
-If you are compiling yourself, you will need to install CKEditor code into your project
-as we do not check in the CKEditor code in our source code system.
-1) Download the latest ZIP file from ckeditor.com. We include the Full Editor version.
-2) Unzip/extract the contents -- you should have a 'ckeditor' folder.
-3) Copy the 'ckeditor' folder to src/org/vaadin/openesignforms/ckeditor/widgetset/public.
-4) If you want to use the Vaadin Save button plugin, copy ckeditor/plugins/vaadinsave
-   to src/org/vaadin/openesignforms/ckeditor/widgetset/public/ckeditor/plugins.
-   This is already done in the released CKEditor code.
-5) Recompile the widgetset.
 
   LICENSE
   =======
@@ -63,6 +35,10 @@ under the Creative Commons Attribution 3.0 License.
   
   CHANGELOG
   =========
+
+7.12.10 (4 January 2024)
+- Upgraded to CKEditor 4.22.1.
+- Upgraded to Vaadin 7.7.17.
 
 7.12.9 (27 February 2019)
 - Upgraded to CKEditor 4.11.3.
